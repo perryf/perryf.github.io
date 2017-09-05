@@ -1,11 +1,11 @@
-
-
 body {
+  width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   background: #aaaaaa;
-  background: -webkit-linear-gradient(to right, #aaaabb, #eeeeff);
-  background: linear-gradient(to right, #8899cc, #ddeeff);
+  background: -webkit-linear-gradient(to right, #aaaaaa, #ffffff);
+  background: linear-gradient(to right, #aaaaaa, #ffffff);
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -24,12 +24,23 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 45%;
+  padding-left: 10px;
 }
 
 .header-info {
   margin: 2px 4px;
-  width: 60%;
+  width: 80%;
+}
+
+.about-me {
+  padding-top: 10px;
+  width: 35%;
+  font-size: 18px;
+}
+
+.header-photo-box {
+  width: 20%;
 }
 
 .email a {
@@ -49,39 +60,6 @@ a {
   width: 160px;
 }
 
-.nav-bar {
-  margin: 0;
-  width: 80%;
-}
-
-.header-links {
-	list-style: none;
-	padding-left: 0;
-  padding-bottom: 0;
-  margin: 6px 0 6px 0;
-  margin: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  display: flex;
-}
-
-.header-link {
-	list-style-position: outside;
-	list-style: none;
-	font-size: 32px;
-  padding: 2px;
-  list-style: none;
-  display: inline;
-}
-
-.header-img {
-	width: 60px;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	border-radius: 10px;
-}
-
 .projects {
   margin-top: 10px;
   display: flex;
@@ -90,7 +68,8 @@ a {
 }
 
 .project-container {
-  width: 320px;
+  border: 1px solid black;
+  width: 500px;
 	margin: 0px;
 }
 
@@ -98,26 +77,72 @@ a {
   opacity: 0.7;
 }
 
+.img-container {
+  text-align: center;
+}
+
 .project-img {
 	display: inline-block;
 	margin: 0 auto;
-	width: 100%;
-}
-
-.project-border {
-	border: 1px white solid;
+	width: 80%;
 }
 
 .project-title {
-	width: 100%;
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
 footer {
+  text-align: center;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   border: black solid 1px
+}
+
+.nav-bar {
+  margin: 0;
+  border: 1px solid black;
+}
+
+.copy p {
+  margin: 0;
+}
+
+.copy, .email {
+  margin: 0;
+}
+
+.info-links {
+	list-style: none;
+	padding-left: 0;
+  padding-bottom: 0;
+  margin: 6px 0 6px 0;
+  margin: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.info-link {
+	list-style-position: outside;
+	list-style: none;
+	font-size: 32px;
+  padding: 2px;
+  list-style: none;
+  display: inline;
+}
+
+.info-img {
+  margin: 0 6px;
+	width: 40px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	border-radius: 10px;
 }
 
 /*@media only screen and (max-width: 800px) {
