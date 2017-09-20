@@ -17,7 +17,7 @@ a {
 /* ____________________________HEADER______________________________ */
 
 header {
-  background: #aaa;
+  background: #ccc;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-around;
@@ -43,9 +43,12 @@ header {
 .nav-bar {
   margin: 0;
   width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .info-links {
+  width: 100%;
 	list-style: none;
 	padding: 0;
   height: 100%;
@@ -67,7 +70,7 @@ header {
 }
 
 .info-img {
-  margin: 0 6px;
+  margin: 0;
 	width: 40px;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -75,7 +78,7 @@ header {
 }
 
 .info-text {
-  margin: 6px;
+  margin: 6px 0;
 }
 
 /* ____________________________MAIN______________________________ */
@@ -121,6 +124,12 @@ main {
   border-top: 1px solid black;
 }
 
+.projects-subheading {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
 .projects {
   margin-top: 10px;
   display: flex;
@@ -141,8 +150,6 @@ main {
 
 .info-container {
   margin: 0;
-  /*border: 1px solid black;*/
-  /*margin-left: 20px;*/
   display: inline-block;
   width: 40%;
 }
@@ -172,7 +179,7 @@ main {
 }
 
 .project-description {
-  text-align: center;
+  text-align: left;
   max-width: 400px;
   padding: 6px 24px 0;
   margin: 0 20px;
@@ -193,13 +200,29 @@ main {
   padding: 0;
   width: 80%;
   max-width: 540px;
-  min-width: 360px;
+  min-width: 400px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 2px;
+}
+
+.contact-container {
+  padding: 16px 0;
+}
+
+.contact-heading {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  margin: 30px;
 }
 
 /* ____________________________FOOTER______________________________ */
 
 footer {
-  background: #aaa;
+  background: #ccc;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -210,7 +233,7 @@ footer {
 }
 
 .copy p {
-  margin: 0;
+  margin: 15px;
 }
 
 .copy {
@@ -244,6 +267,11 @@ footer {
     flex-direction: column;
   }
 
+  .about-me {
+    width: 80%;
+    min-width: 310px;
+  }
+
   .project-container {
     width: 100%;
   }
@@ -253,9 +281,21 @@ footer {
     flex-direction: column;
   }
 
+  .project-description, .project-title, .project-subtitle {
+    margin: 0 auto;
+  }
+
+  .project-title {
+    padding-top: 12px;
+  }
+
   .img-container {
     order: 1;
     width: 100%;
+  }
+
+  .project-img {
+    min-width: 310px;
   }
 
   .info-container {
@@ -264,5 +304,11 @@ footer {
 
   .info-container {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav-bar {
+    flex-direction: column;
   }
 }
