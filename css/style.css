@@ -1,3 +1,5 @@
+/* ____________________________TAGS______________________________ */
+
 body {
 	width: 100%;
 	min-height: 100%;
@@ -14,7 +16,10 @@ a {
 	color: #c22;
 }
 
-/* ____________________________HEADER______________________________ */
+strong {
+	font-weight: 900;
+	text-decoration: underline;
+}
 
 header {
 	background: #ccc;
@@ -24,7 +29,26 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	height: 12vh;
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	background: #ccc;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: black solid 1px;
+}
+
+/* ____________________________HEADER______________________________ */
 
 .header-info-box {
 	width: 40%;
@@ -72,8 +96,8 @@ header {
 .info-img {
 	margin: 0;
 	width: 40px;
-	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	border-radius: 10px;
 }
 
@@ -81,22 +105,17 @@ header {
 	margin: 6px 0;
 }
 
-/* ____________________________MAIN______________________________ */
-
-main {
-	display: flex;
-	flex-direction: column;
-}
+/* ____________________________MY_PROFILE______________________________ */
 
 .profile {
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 80px;
+	height: 88vh;
 }
 
 .about-me {
 	padding-top: 10px;
-	margin: auto;
+	margin: 6vh auto;
 	width: 40%;
 	min-width: 360px;
 	font-size: 20px;
@@ -107,20 +126,22 @@ main {
 }
 
 .profile-photo-box {
-	margin: auto;
+	display: block;
+	margin: 6vh auto;
 }
 
 .profile-photo {
 	border-radius: 20px;
-	width: 360px;
-	display: block;
-	margin: auto;
+	max-width: 360px;
 }
+
+/* ____________________________PROJECTS______________________________ */
 
 .projects-heading {
 	text-align: center;
 	text-decoration: underline;
-	padding: 0;
+	padding: 10px;
+	margin: 0;
 	border-top: 1px solid black;
 }
 
@@ -130,13 +151,7 @@ main {
 	margin: 0 0 20px;
 }
 
-strong {
-	font-weight: 900;
-	text-decoration: underline;
-}
-
 .projects {
-	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -180,7 +195,7 @@ strong {
 	text-align: center;
 	max-width: 400px;
 	padding: 0 24px;
-	margin: 0 20px;
+	margin: 5px 20px;
 }
 
 .project-description {
@@ -227,17 +242,6 @@ strong {
 
 /* ____________________________FOOTER______________________________ */
 
-footer {
-	background: #ccc;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border: black solid 1px;
-}
-
 .copy p {
 	margin: 15px;
 }
@@ -251,6 +255,7 @@ footer {
 @media only screen and (max-width: 700px) {
 	header {
 		flex-direction: column;
+		height: auto;
 	}
 
 	.header-info-box {
