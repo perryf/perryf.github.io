@@ -87,7 +87,7 @@ footer {
 	list-style-position: outside;
 	list-style: none;
 	font-size: 20px;
-	padding: 0 8px;
+	padding: 0 8px 4px;
 	margin: 0 4px;
 	list-style: none;
 	display: inline;
@@ -261,6 +261,10 @@ footer {
 	.header-info-box {
 		width: 100%;
 		order: 1;
+	}
+
+	.info-link {
+		padding: 0 4px;
 	}
 
 	.nav-bar {
