@@ -110,14 +110,13 @@ footer {
 .profile {
 	display: flex;
 	flex-direction: row;
-	height: 88vh;
+	justify-content: space-around;
+	min-height: 88vh;
 }
 
 .about-me {
-	padding-top: 10px;
 	margin: 6vh auto;
-	width: 40%;
-	min-width: 360px;
+	width: 45%;
 	font-size: 20px;
 }
 
@@ -126,13 +125,42 @@ footer {
 }
 
 .profile-photo-box {
-	display: block;
-	margin: 6vh auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	width: 45%;
 }
 
 .profile-photo {
 	border-radius: 20px;
 	max-width: 360px;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.about-me-extra-title {
+	margin: 10px auto 8px;
+	text-align: center;
+}
+
+.small-photo-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.small-photo {
+	margin: 10px;
+	width: 33%;
+	height: 33%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
+}
+
+.small-photo:hover {
+	opacity: 0.9;
 }
 
 /* ____________________________PROJECTS______________________________ */
@@ -164,7 +192,8 @@ footer {
 	padding: 30px 0 40px;
 }
 
-.project-container a:hover {
+.project-container a:hover,
+.project-container span:hover {
 	opacity: 0.9;
 }
 
@@ -264,7 +293,7 @@ footer {
 	}
 
 	.info-link {
-		padding: 0 4px;
+		padding: 4px;
 	}
 
 	.nav-bar {
@@ -281,7 +310,12 @@ footer {
 		flex-direction: column;
 	}
 
+	.profile-photo-box {
+		width: 100%;
+	}
+
 	.about-me {
+		margin: 3vh auto;
 		width: 80%;
 		min-width: 310px;
 	}
